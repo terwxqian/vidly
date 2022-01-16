@@ -10,4 +10,4 @@ def index(request):
     # Movie.objects.get(id=1)
     movies = Movie.objects.all()
 
-    return render(request, 'index.html', {'movies': movies})
+    return render(request, 'movies/index.html', {'movies': movies})
