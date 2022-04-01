@@ -14,6 +14,4 @@ urlpatterns = [
     path('api/auth', views.auth, name='auth'),
     path('api/heartbeat/<userid>', views.heartbeat, name='heatbeat'),
     #url(r'^/api/auth/$', views.MyView.as_view(), name='my-view'),
-    path('auth', views.auth, name='auth'),
-    path('heartbeat/<userid>', views.heartbeat, name='heatbeat'),
 ]
