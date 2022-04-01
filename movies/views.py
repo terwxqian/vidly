@@ -19,4 +19,12 @@ def detail(request, movie_id):
     except Movie.DoesNotExist:
         raise Http404()
 
+def play(request, name):
+    try:
+        resp = requests.get(url, stream=True)
+        resp.raw.decode_content = True
+        return HttpResponse(request, resp.raw)
+    except Movie.DoesNotExist:
+        raise Http404()
+
 
