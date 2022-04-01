@@ -4,12 +4,12 @@ from django.urls import URLPattern
 from django.urls import path
 from . import views
 
-# movies/
-# moves/1/detail
+# /api/auth
+# /api/heartbeat/[userid]
 
-app_name = 'movies'
+app_name = 'authsys'
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('<int:movie_id>', views.detail, name='detail')
+    #url(r'^/api/auth/$', views.MyView.as_view(), name='my-view'),
 ]
